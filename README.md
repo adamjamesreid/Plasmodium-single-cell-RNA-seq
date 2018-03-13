@@ -26,3 +26,16 @@ Plasmodium falciparum mature gametocytes
 - PfGam_counts.txt is the raw count data
 - PfGam_meta.txt is the meta data describing the samples/cells
 - fal.desc contains the product descriptions for the genes
+
+Other code
+
+- Fourier_code.tar.gz contains the code used to identify the peak of expression for cycling genes
+
+  To unpack use:
+    tar -xvf Fourier_code.tar.gz
+    
+  The resulting README.rtf file explains how to compile the code and what the input/outputs are for the find_periodicity  script
+  
+- stage_rankmethod.pl was used to identify the most likely cell cycle stage for each single cell based on bulk RNA-seq data
+
+  It takes as input 
