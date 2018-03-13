@@ -38,4 +38,18 @@ Other code
   
 - stage_rankmethod.pl was used to identify the most likely cell cycle stage for each single cell based on bulk RNA-seq data
 
-  It takes as input 
+  It takes as input:
+  
+  1. A matrix of normalised gene expression values for your cells with cells in columns and genes in rows (first column header should be 'id')
+  2. A matrix of normalised gene expression values for the reference data in the same format as (1) (see example file Derisi_3d7_smoothed.txt.redPct)
+  3. An expression cutoff value for the query data e.g. only genes with an expression level above this value will be included for a particular cell. The default is 10 and is suggested for linear FPKM values. For lscran values we recommend 3.
+  4. An optional file with a mapping between the sample name in the reference data matrix and another useful name. This was used because in the DeRisi data, some samples with different names relate to the same timepoint (see example file Derisi_3d7_tp_mapping.txt)
+  
+  The output is:
+  
+  Column 1: Sample name
+  Column 2: Best prediction
+  Column 3: Number of genes used in the comparison with bulk
+  Column 4: Spearmans r
+  Column 5: Standard deviation
+  Column 6: String of Spearman's r values for each bulk reference sample
