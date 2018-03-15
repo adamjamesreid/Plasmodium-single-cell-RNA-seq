@@ -32,11 +32,15 @@ Other code
 - Fourier_code.tar.gz contains the code used to identify the peak of expression for cycling genes
 
   To unpack use:
-    tar -xvf Fourier_code.tar.gz
+    `tar -xvf Fourier_code.tar.gz`
     
   The resulting README.rtf file explains how to compile the code and what the input/outputs are for the find_periodicity  script
   
 - stage_rankmethod.pl was used to identify the most likely cell cycle stage for each single cell based on bulk RNA-seq data
+
+  Using the data we provide it can be run like this:
+  
+  `stage_rankmethod.pl ./stage_rankmethod.pl  Pb_scranl.dat hoo_berghei_ranks.dat 3`
 
   It takes as input:
   
@@ -47,15 +51,15 @@ Other code
   
   The output is:
   
-  Column 1: Sample name
-  
-  Column 2: Best prediction
-  
-  Column 3: Number of genes used in the comparison with bulk
-  
-  Column 4: Spearmans r
-  
-  Column 5: Standard deviation
-  
-  Column 6: String of Spearman's r values for each bulk reference sample
+    Column 1: Sample name
+
+    Column 2: Best prediction
+
+    Column 3: Number of genes used in the comparison with bulk
+
+    Column 4: Spearmans r
+
+    Column 5: Standard deviation
+
+    Column 6: String of Spearman's r values for each bulk reference sample
   
