@@ -48,8 +48,14 @@ Other code
   The output is:
   
   Column 1: Sample name
+  
   Column 2: Best prediction
+  
   Column 3: Number of genes used in the comparison with bulk
+  
   Column 4: Spearmans r
+  
   Column 5: Standard deviation
+  
   Column 6: String of Spearman's r values for each bulk reference sample
+  
